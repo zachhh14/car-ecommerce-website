@@ -1,4 +1,9 @@
+import Nav from './nav'
 
 export default function Home() {
-    return <></>
+    return (
+        <>
+            <Nav />
+        </>
+    )
 }
