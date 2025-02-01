@@ -1,4 +1,4 @@
-import Nav from '@/components/nav'
+import Nav from "@/components/nav"
 
 const Products = () => {
     return (
@@ -6,7 +6,6 @@ const Products = () => {
             <Nav />
             <h1>Product List</h1>
         </>
-        //TODO: button redirect to create of page
     )
 }
 
