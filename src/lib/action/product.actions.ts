@@ -2,6 +2,7 @@
 
 import { Car } from '@/types/car'
 import { createClient } from '@/supabase/server'
+import { revalidatePath } from 'next/cache'
 
 export const addProduct = async (car: Car) => {
     const supabase = await createClient()
@@ -20,5 +21,7 @@ export const addProduct = async (car: Car) => {
         console.error('Error listing:', error)
 
         return { data: null, error }
+    } finally {
+        revalidatePath('/products')
     }
 }
