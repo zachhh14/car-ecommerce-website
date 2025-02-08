@@ -26,7 +26,6 @@ const Navbar = ({ toggle }: { toggle: () => void }) => {
                             </Link>
                         </li>
                     </ul>
-                    {/* <Button /> */}
                     <Button onClick={toggle}>Button Here</Button>
                 </div>
             </div>
