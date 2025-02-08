@@ -1,6 +1,5 @@
 'use client'
 
-import Nav from '@/components/nav'
 import { Button } from '@/components/ui/button'
 import {
     Form,
@@ -42,8 +41,7 @@ const CreateProduct = () => {
 
     return (
         <div className='p-2'>
-            <Nav />
-            <h1 className='text-2xl font-bold text-center'>Create Product</h1>
+            <h1 className='text-2xl font-bold text-center'>Add Car</h1>
             {/* TODO: add mutiple image upload */}
             <Form {...form}>
                 <form onSubmit={form.handleSubmit(onSubmit)}>
